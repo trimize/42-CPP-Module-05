@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 13:06:25 by trimize           #+#    #+#             */
-/*   Updated: 2024/07/25 15:01:47 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/27 13:36:57 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <string.h>
 #include <iostream>
-#include "Form.hpp"
 
 class Bureaucrat
 {
@@ -35,7 +34,6 @@ class Bureaucrat
 		void			setGrade(int grade);
 		void			incrementGrade(void);
 		void			decrementGrade(void);
-		void			signForm(Form &f);
 	
 	class GradeTooLowException : public std::exception
 	{

@@ -6,7 +6,7 @@
 /*   By: trimize <trimize@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 13:10:37 by trimize           #+#    #+#             */
-/*   Updated: 2024/07/25 15:02:25 by trimize          ###   ########.fr       */
+/*   Updated: 2024/09/27 13:37:03 by trimize          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,11 +110,6 @@ void	Bureaucrat::decrementGrade(void)
 		throw Bureaucrat::GradeTooLowException();
 	else
 		this->grade++;
-}
-
-void	Bureaucrat::signForm(Form &f)
-{
-	f.beSigned(*this);
 }
 
 const char *Bureaucrat::GradeTooHighException::what(void) const throw()
